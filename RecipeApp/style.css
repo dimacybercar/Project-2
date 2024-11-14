@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: #f9f9f9;
+    height: 100vh;
+    width: 1600px;
+    max-width: 100%;
+}
+
+header nav{
+    background-color: rgb(153, 214, 211);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: column;
+    align-items: center;
+}
+
+header nav h1{
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+header nav form{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+form input{
+    border-radius: 2rem;
+    font-size: 1.4rem;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    border: none;
+}
+
+form button{
+    font-size: 1.4rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease-in-out;
+}
+
+form button:hover{
+    background-color: #adadad;
+}
+
+.recipe-container{
+    margin-top: 2rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    grid-gap: 2.5rem;
+    margin: 1rem;
+    padding: 2rem;
+    place-items: center;
+}
+
+.recipe{
+    background-color: #f5ebeb;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    max-width: 20rem;
+}
+
+.recipe img{
+    height: 20rem;
+}
+
+.recipe h3{
+    font-size: 1rem;
+}
+
+.recipe button{
+    font-size: 1.4rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.recipe button:hover{
+    background-color: #adadad;
+}
+
+.recipe-details{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 1rem;
+    width: 40%;
+    height: 60%;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+    overflow-y: scroll;
+}
+
+.recipe-details-content{
+    padding: 2rem;
+}
+
+.closeBtn{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #333;
+}
+
+.favorites-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    grid-gap: 2.5rem;
+    margin: 1rem;
+    padding: 2rem;
+    place-items: center;
+}
+
+.hide{
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    header nav{
+        flex-direction: column;
+    }
+    header nav form{
+        width: 80%;
+        margin-top: 1rem;
+    }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Recipe App</h1>
+            <form>
+                <input type="text" placeholder="Recipe name or ingredients" class="searchBox">
+                <button type="button" class="searchBtn">Search</button>
+                <button type="button" class="favBtn">View Favorites</button>
+            </form>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="recipe-container">
+                <h2 id="start-message">Search your favorite recipes</h2>
+            </div>
+            <div class="recipe-details">
+                <button type="button" class="closeBtn">Close</button>
+                <div class="recipe-details-content"></div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

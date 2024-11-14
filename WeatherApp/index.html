@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <main class="main-container">
+        <header class="header-container">
+            <input class="city-name" placeholder="Search City" type="text">
+            <button class="search-btn">
+                <i class="material-icons">search</i>
+            </button>
+        </header>
+
+        <section class="search-city">
+            <img class="message-img" src="umbrella.svg">
+            <div>
+                <h1>Search City</h1>
+                <p style="font-size: 1.1rem;">Good to see you! Find out the forecast and make the most of your day.</p>
+            </div>
+        </section>
+
+        <section class="notfound-city" style="display: none;">
+            <img class="message-img" src="notfound.svg">
+            <div>
+                <h1>404 Error!</h1>
+                <p style="font-size: 1.1rem;">Your city was not found.</p>
+            </div>
+        </section>
+
+        <section class="weather-display" style="display: none;">
+            <div class="location-container">
+                <div class="location">
+                    <i class="material-icons">location_on</i>
+                    <h1 class="country-txt">Germany</h1>
+                </div>
+                <h2 class="date-txt">Mon, 12 Nov</h2>
+            </div>
+
+            <div class="weather-sum-container">
+                <img src="cloudsun.svg" alt="" class="weather-sum-img">
+                <div class="weather-sum-info">
+                    <h3 class="temp-txt">31°C</h3>
+                    <h4 class="condition-txt">Clouds</h4>
+                </div>
+            </div>
+
+            <div class="weather-conditions-container">
+                <div class="condition-item">
+                    <i class="material-icons">water_drop</i>
+                    <div class="condition-info">
+                        <h5>Humidity</h5>
+                        <h5 class="humidity">55%</h5>
+                    </div>
+                </div>
+
+                <div class="condition-item">
+                    <i class="material-icons">air</i>
+                    <div class="condition-info">
+                        <h5>Wind Speed</h5>
+                        <h5 class="wspeed">2M/s</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="forecast-items-container">
+                <div class="forecast-item">
+                    <h5>29 Aug</h5>
+                    <img src="sunny.svg" alt="" class="forecast-item-img">
+                    <h5>29°C</h5>
+                </div>
+                <div class="forecast-item">
+                    <h5>29 Aug</h5>
+                    <img src="sunny.svg" alt="" class="forecast-item-img">
+                    <h5>29°C</h5>
+                </div>
+                <div class="forecast-item">
+                    <h5>29 Aug</h5>
+                    <img src="sunny.svg" alt="" class="forecast-item-img">
+                    <h5>29°C</h5>
+                </div>
+                <div class="forecast-item">
+                    <h5>29 Aug</h5>
+                    <img src="sunny.svg" alt="" class="forecast-item-img">
+                    <h5>29°C</h5>
+                </div>
+                <div class="forecast-item">
+                    <h5>29 Aug</h5>
+                    <img src="sunny.svg" alt="" class="forecast-item-img">
+                    <h5>29°C</h5>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
